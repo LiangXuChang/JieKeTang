@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://120.79.136.97:3306/classroom
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
+#  redis:
+#    host: 39.108.209.221
+#    port: 6379
+#    password:
+
+http:
+  multipart:
+    max-request-size: 100MB
+    max-file-size: 100MB
+    resolve-lazily: true
+
+#wechat:
+#  mpAppId: wx3f204324a03f26b8
+#  mpAppSecret: 88d29e7f47fea677b97d6478df656661
+#  openAppId: wx6ad144e54af67d87
+#  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+#  mchId: 1483469312
+#  mchKey: 06C56A89949D617xxxxxxxxxxx
+#  keyPath: /var/weixin_cert/h5.p12
+#  notifyUrl: http://sell.natapp4.cc/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://test.socialcontactblog.com
+  wechatOpenAuthorize: http://test.socialcontactblog.com
+  sell: http://test.socialcontactblog.com
